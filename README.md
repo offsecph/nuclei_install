@@ -27,7 +27,9 @@ chmod +x ./install.sh arm64
 via curl:
 
 ```
-mkdir nuclei_install && cd nuclei_install && curl -sSf https://raw.githubusercontent.com/offsecph/nuclei_install/master/install.sh | bash
+mkdir nuclei_install
+cd nuclei_install
+curl -sSf https://raw.githubusercontent.com/offsecph/nuclei_install/master/install.sh | bash
 ```
 
 ### Nuclei Templates
