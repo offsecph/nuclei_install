@@ -27,8 +27,8 @@ function install_aquatone_arm64() {
         curl https://api.github.com/repos/michenriksen/aquatone/releases \
                 | grep "browser_download_url.*_linux_arm64_*.*.*zip" \
                 | head -n1 \                                         
-                | cut -d: -f2,3 \                                    
-                | tr -d '"' \                                        
+                | cut -d: -f2,3 \
+		| tr -d '"' \                                        
                 | wget -qi - -P $PWD/tools/aquatone                  
                                                                      
         unzip $PWD/tools/aquatone/aquatone_linux_arm64_*.*.*.zip -d $PWD/tools/aquatone_arm64
@@ -81,7 +81,6 @@ function install_httpx() {
     fi
 }
 
-
 function install_httpx_arm64() {                                                                                                                 
     if [ ! -f "$PWD/httpx" ]; then                                                                                                         
         curl https://api.github.com/repos/projectdiscovery/httpx/releases \                                                                
@@ -89,7 +88,7 @@ function install_httpx_arm64() {
                 | head -n1 \                                         
                 | cut -d: -f2,3 \                                    
                 | sed 's/"//g' \                                                                                                                                                                                                                                                      
-                | wget -qi - -P $PWD/tools/httpx                                                                                                                                                                                                                                      
+                | wget -qi - -P $PWD/tools/httpx                                                                                                                                                                                                                                   
         unzip $PWD/tools/httpx/httpx_*.*.*_linux_arm64.zip -d $PWD/tools/httpx_arm64                                                             
         rm -rf $PWD/tools/httpx/httpx_*.*.*_linux_arm64.zip                                                                                
     fi                                                                                                                                     
