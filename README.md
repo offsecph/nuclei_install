@@ -24,21 +24,5 @@ chmod +x ./install.sh arm64
 ./install.sh
 ```
 
-via curl:
-
-amd64
-```
-mkdir nuclei_install
-cd nuclei_install
-curl -sSf https://raw.githubusercontent.com/offsecph/nuclei_install/master/install.sh amd64 | bash
-```
-
-arm64
-```
-mkdir nuclei_install
-cd nuclei_install
-curl -sSf https://raw.githubusercontent.com/offsecph/nuclei_install/master/install.sh arm64 | bash
-```
-
 ### Nuclei Templates
 All .yaml files were imported to nuclei-templates/all for quick and easy use
