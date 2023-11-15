@@ -7,10 +7,17 @@ git clone https://github.com/offsecph/nuclei_install
 ```
 
 ### Installation
-
+amd64
 ```bash
 cd nuclei_install
-chmod +x ./install.sh
+chmod +x ./install.sh amd64
+./install.sh
+```
+
+arm64
+```bash
+cd nuclei_install
+chmod +x ./install.sh arm64
 ./install.sh
 ```
 ### Nuclei Templates
