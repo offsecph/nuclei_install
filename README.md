@@ -1,6 +1,11 @@
 # nuclei_install
 Automated installation of nuclei / katana / httpx / aquatone scanners to latest versions
 
+### Download
+```bash
+git clone https://github.com/offsecph/nuclei_install
+```
+
 ### Installation
 
 ```bash
