@@ -1,5 +1,5 @@
 # nuclei_install
-Portable binaries of nuclei / katana / httpx / aquatone scanners to latest versions
+Portable compiled binaries of nuclei / katana / httpx / aquatone scanners to latest versions
 
 ### Download
 ```bash
